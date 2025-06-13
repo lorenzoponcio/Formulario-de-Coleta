@@ -129,5 +129,11 @@ app.post('/coleta', async (req, res) => {
   }
 });
 
+app.get('/check-is-on', (req, res) => {
+  return res.sendStatus(200);
+});
+
+// Inicia o servidor
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => console.log(`🚀 API rodando em http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`🚀 API rodando...`));
+
